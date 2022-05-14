@@ -98,13 +98,14 @@ const baseRulesAppliedLast = {
 };
 
 const jsBase = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
       legacyDecorators: true,
     },
+    requireConfigFile: false,
   },
   env: {
     browser: true,
